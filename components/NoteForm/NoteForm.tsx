@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useRef, useEffect } from "react";
 import type { NoteTag } from "../../types/note";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { createNote } from "../../lib/api";
+import { createNote } from "../../lib/api/clientApi";
 import { useNoteStore } from "../../lib/store/noteStore";
 
 const initialDraft = {
